@@ -1,0 +1,27 @@
+:root {
+    --primary-color: #3fd0d4;
+    --primary-color-dark: #3abdc1;
+    --secondary-color: #ffbd30;
+    --while-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --text-color-light: #666;
+}
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+*::selection {
+    color: var(--while-color);
+    background: var(--primary-color);
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6rem;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
