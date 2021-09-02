@@ -25,3 +25,24 @@ html {
     font-size: 62.5%;
     box-sizing: border-box;
 }
+
+/* Animation */
+@keyframes TopFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes languageChoose {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
