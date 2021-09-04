@@ -2,20 +2,23 @@
     --primary-color: #3fd0d4;
     --primary-color-dark: #3abdc1;
     --secondary-color: #ffbd30;
-    --while-color: #fff;
+    --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
     --text-color-light: #666;
+    --border-color: #bdbdbd;
+    --border-color-light: #f1f1f1;
 }
 
 * {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 *::selection {
-    color: var(--while-color);
+    color: var(--white-color);
     background: var(--primary-color);
 }
 
