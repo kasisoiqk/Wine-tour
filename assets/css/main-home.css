@@ -12,6 +12,7 @@
     justify-content: space-between;
     background-color: var(--black-color);
     height: 46px;
+    display: none;
 }
 
 .header-info__left {
@@ -155,6 +156,7 @@
     flex-direction: column;
     align-items: center;
     padding-top: 44px;
+    display: none;
 }
 
 .header-banner__logo {
@@ -179,6 +181,12 @@
     text-align: center;
     cursor: pointer;
     position: relative;
+    padding: 8px 0;
+}
+
+.header-banner-menu__item > a,
+.header-banner-menu__item-container > a {
+    font-weight: 500;
 }
 
 .header-banner-menu__item-container {
@@ -192,7 +200,7 @@
 .header-link-hover {
     color: var(--text-color);
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 400;
     position: relative;
 }
 
@@ -392,4 +400,66 @@
 .goto-top:hover {
     background-color: var(--primary-color);
     color: var(--white-color);
+}
+
+/* Header on tablet - moblie */
+.header__tablet {
+    background-color: var(--primary-color);
+}
+
+.header__tablet-main {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+}
+
+.header-tablet__menu {
+
+}
+
+.header-tablet-menu__icon,
+.header-tablet__modal-login {
+    font-size: 2rem;
+    color: var(--white-color);
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+.header-tablet__logo {
+    height: 36px;
+}
+
+.header-tablet__logo > img {
+    height: 100%;
+}
+
+.header-tablet__modal-login {
+
+}
+
+
+/* Container */
+
+/* Banner */
+.app_container {
+    padding: 26px 0;
+}
+
+.container__banner {
+}
+
+.container-banner__right {
+    background-image: url(../images/travel-slide-1.jpg);
+    background-size: cover;
+    height: 354px;
+    margin: 12px 0;
+}
+
+.container-banner__left {
+    background-image: url(../images/travel-slide-2.jpg);
+    background-size: cover;
+    height: 576px;
+    margin: 12px 0;
 }

@@ -1,0 +1,41 @@
+/* >= Tablet */
+@media (min-width: 740px) {
+
+}
+
+
+/* PC medium resolution > */
+@media (min-width: 1113px) {
+    .header__info {
+        display: flex;
+    }
+    .header__banner {
+        display: flex;
+    }
+    .hide-on-pc {
+        display: none;
+    }
+    .container-banner__right ,
+    .container-banner__left {
+        height: 792px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+    .container-banner__right,
+    .container-banner__left {
+        height: 354px;
+    }
+}
+
+/* > PC low resolution */
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .container-banner__right ,
+    .container-banner__left {
+        height: 792px;
+    }
+}

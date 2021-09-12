@@ -589,3 +589,9 @@
         margin-left: 91.66667%;
     }
 }
+
+@media (max-width: 739px) {
+    .wide {
+        width: 300px;
+    }
+}
