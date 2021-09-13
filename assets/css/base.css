@@ -61,3 +61,14 @@ html {
         transform: translateY(0);
     }
 }
+
+@keyframes menuGrow {
+    from {
+        line-height: 0;
+        color: transparent;
+    }
+    to {
+        line-height: 3rem;
+        color: var(--text-color);
+    }
+}

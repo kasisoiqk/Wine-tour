@@ -19,6 +19,9 @@
     .container-banner__left {
         height: 792px;
     }
+    .app_container {
+        margin-top: 0;
+    }
 }
 
 /* Tablet */
@@ -34,8 +37,20 @@
 
 /* > PC low resolution */
 @media (min-width: 1024px) and (max-width: 1239px) {
+    .header__info {
+        display: flex;
+    }
+    .header__banner {
+        display: flex;
+    }
     .container-banner__right ,
     .container-banner__left {
         height: 792px;
+    }
+    .app_container {
+        margin-top: 0;
+    }
+    .hide-on-pc {
+        display: none;
     }
 }

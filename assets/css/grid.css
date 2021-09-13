@@ -590,6 +590,7 @@
     }
 }
 
+/* Mobile */
 @media (max-width: 739px) {
     .wide {
         width: 300px;
