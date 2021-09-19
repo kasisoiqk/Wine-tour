@@ -9,15 +9,9 @@
     <link rel="shortcut icon" href="./assets/icon/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Poppins:display=swap|Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main-home.css">
@@ -205,7 +199,8 @@
                                     <div class="col l-3 header-banner-menu-choose-container__item">
                                         <div
                                             class="header-banner-menu-choose-container-item__item header-banner-menu-choose-container-item__item--title">
-                                            <a href="#" class="header-link-hover">FEATURED</a></div>
+                                            <a href="#" class="header-link-hover">FEATURED</a>
+                                        </div>
                                         <div class="header-banner-menu-choose-container-item__item"><a href="#"
                                                 class="header-link-hover">Tour</a></div>
                                         <div class="header-banner-menu-choose-container-item__item"><a href="#"
@@ -226,7 +221,8 @@
                                     <div class="col l-3 header-banner-menu-choose-container__item">
                                         <div
                                             class="header-banner-menu-choose-container-item__item header-banner-menu-choose-container-item__item--title">
-                                            <a href="#" class="header-link-hover">PRESENTATION</a></div>
+                                            <a href="#" class="header-link-hover">PRESENTATION</a>
+                                        </div>
                                         <div class="header-banner-menu-choose-container-item__item"><a href="#"
                                                 class="header-link-hover">Tour</a></div>
                                         <div class="header-banner-menu-choose-container-item__item"><a href="#"
@@ -247,7 +243,8 @@
                                     <div class="col l-3 header-banner-menu-choose-container__item">
                                         <div
                                             class="header-banner-menu-choose-container-item__item header-banner-menu-choose-container-item__item--title">
-                                            <a href="#" class="header-link-hover">CLASSIC</a></div>
+                                            <a href="#" class="header-link-hover">CLASSIC</a>
+                                        </div>
                                         <div class="header-banner-menu-choose-container-item__item"><a href="#"
                                                 class="header-link-hover">Tour</a></div>
                                         <div class="header-banner-menu-choose-container-item__item"><a href="#"
@@ -268,7 +265,8 @@
                                     <div class="col l-3 header-banner-menu-choose-container__item">
                                         <div
                                             class="header-banner-menu-choose-container-item__item header-banner-menu-choose-container-item__item--title">
-                                            <a href="#" class="header-link-hover">TYPOGRAPHY</a></div>
+                                            <a href="#" class="header-link-hover">TYPOGRAPHY</a>
+                                        </div>
                                         <div class="header-banner-menu-choose-container-item__item"><a href="#"
                                                 class="header-link-hover">Tour</a></div>
                                         <div class="header-banner-menu-choose-container-item__item"><a href="#"
@@ -299,7 +297,7 @@
                 <div class="header__tablet-main grid wide">
                     <div class="header-tablet__menu">
                         <label for="menu-tablet" class="header-tablet-menu__icon">
-                            <i class="far fa-list-alt"></i>
+                            <span class="material-icons-outlined">segment</span>
                         </label>
                     </div>
                     <div class="header-tablet__logo">
@@ -312,8 +310,9 @@
             </div>
             <div class="header-tablet-menu__list-main hide-on-pc">
                 <ul class="header-tablet-menu__list wide">
-                    <li class="header-tablet-menu__item">
-                        <div class="header-tablet-menu__link title--active">Home</div>
+                    <div class="header-tablet-menu__item">
+                        <input type="checkbox" name="" id="menu-tablet-home" hidden>
+                        <label for="menu-tablet-home" class="header-tablet-menu__link title--active">Home</label>
                         <i class="fas fa-angle-right"></i>
                         <div class="header-tablet-menu-link__list">
                             <div class="header-tablet-menu-link__item">Travel Agency</div>
@@ -321,18 +320,12 @@
                             <div class="header-tablet-menu-link__item">Travel Agency</div>
                             <div class="header-tablet-menu-link__item">Travel Agency</div>
                         </div>
-                    </li>
+                    </div>
                     <li class="header-tablet-menu__item">
                         <div class="header-tablet-menu__link">Page</div>
                         <i class="fas fa-angle-right"></i>
                         <div class="header-tablet-menu-link__list">
                             <div class="header-tablet-menu-link__item"></div>
-                        </div>
-                        <div class="header-tablet-menu-link__list">
-                            <div class="header-tablet-menu-link__item">Travel Agency</div>
-                            <div class="header-tablet-menu-link__item">Travel Agency</div>
-                            <div class="header-tablet-menu-link__item">Travel Agency</div>
-                            <div class="header-tablet-menu-link__item">Travel Agency</div>
                         </div>
                     </li>
                     <li class="header-tablet-menu__item">
@@ -341,12 +334,6 @@
                         <div class="header-tablet-menu-link__list">
                             <div class="header-tablet-menu-link__item"></div>
                         </div>
-                        <div class="header-tablet-menu-link__list">
-                            <div class="header-tablet-menu-link__item">Travel Agency</div>
-                            <div class="header-tablet-menu-link__item">Travel Agency</div>
-                            <div class="header-tablet-menu-link__item">Travel Agency</div>
-                            <div class="header-tablet-menu-link__item">Travel Agency</div>
-                        </div>
                     </li>
                     <li class="header-tablet-menu__item">
                         <div class="header-tablet-menu__link">Tours</div>
@@ -354,24 +341,12 @@
                         <div class="header-tablet-menu-link__list">
                             <div class="header-tablet-menu-link__item"></div>
                         </div>
-                        <div class="header-tablet-menu-link__list">
-                            <div class="header-tablet-menu-link__item">Travel Agency</div>
-                            <div class="header-tablet-menu-link__item">Travel Agency</div>
-                            <div class="header-tablet-menu-link__item">Travel Agency</div>
-                            <div class="header-tablet-menu-link__item">Travel Agency</div>
-                        </div>
                     </li>
                     <li class="header-tablet-menu__item">
                         <div class="header-tablet-menu__link">Blog</div>
                         <i class="fas fa-angle-right"></i>
                         <div class="header-tablet-menu-link__list">
                             <div class="header-tablet-menu-link__item"></div>
-                        </div>
-                        <div class="header-tablet-menu-link__list">
-                            <div class="header-tablet-menu-link__item">Travel Agency</div>
-                            <div class="header-tablet-menu-link__item">Travel Agency</div>
-                            <div class="header-tablet-menu-link__item">Travel Agency</div>
-                            <div class="header-tablet-menu-link__item">Travel Agency</div>
                         </div>
                     </li>
                     <li class="header-tablet-menu__item">
@@ -396,13 +371,143 @@
 
 
         <div class="app_container">
-            <div class="container__banner grid wide">
-                <div class="row">
-                    <div class="col l-8 m-8 c-12">
-                        <div class="container-banner__right"></div>
+            <div class="grid wide">
+                <div class="container__banner">
+                    <div class="row">
+                        <div class="col l-8 m-8 c-12">
+                            <div class="container-banner__right"></div>
+                        </div>
+                        <div class="col l-4 m-4 c-12">
+                            <div class="container-banner__left"></div>
+                        </div>
                     </div>
-                    <div class="col l-4 m-4 c-12">
-                        <div class="container-banner__left"></div>
+                </div>
+
+                <div class="container__popular-tours">
+                    <div class="popular-tours__img">
+                        <img src="./assets/images/travel-img-1.png" alt="travel-img-1">
+                    </div>
+                    <div class="popular-tours__content">
+                        <div class="popular-tours-content__title">
+                            <h2>Our Popular Tours</h2>
+                            <p>Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viver ra nulla
+                                ut metus varius laoreet. Quisque rutrum.</p>
+                        </div>
+                        <div class="popular-tours-content__percent">
+                            <div class="popular-tours-content-percent__item">
+                                <div class="popular-tours-content-percent__top">
+                                    <div class="popular-tours-content-percent-top__title">Countryside</div>
+                                    <div class="popular-tours-content-percent-top__value">76</div>
+                                </div>
+                                <div class="popular-tours-content-percent__bottom">
+                                    <span class="popular-tours-content-percent__fill" style="width: 76%;"></span>
+                                </div>
+                            </div>
+                            <div class="popular-tours-content-percent__item">
+                                <div class="popular-tours-content-percent__top">
+                                    <div class="popular-tours-content-percent-top__title">Vineyard</div>
+                                    <div class="popular-tours-content-percent-top__value">92</div>
+                                </div>
+                                <div class="popular-tours-content-percent__bottom">
+                                    <span class="popular-tours-content-percent__fill" style="width: 92%;"></span>
+                                </div>
+                            </div>
+                            <div class="popular-tours-content-percent__item">
+                                <div class="popular-tours-content-percent__top">
+                                    <div class="popular-tours-content-percent-top__title">Wine Tasting</div>
+                                    <div class="popular-tours-content-percent-top__value">86</div>
+                                </div>
+                                <div class="popular-tours-content-percent__bottom">
+                                    <span class="popular-tours-content-percent__fill" style="width: 86%;"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container__img">
+                    <img src="./assets/images/travel-img-2.jpg" alt="travel-img-2">
+                </div>
+
+                <div class="container__text">
+                    <h2>The Best Tours</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an
+                        commodo ligula eget dolor. Aenean massa. Cum sociis</p>
+                </div>
+
+                <div class="container__gird-image">
+                    <div class="row">
+                        <div class="col l-3 m-6 c-12">
+                            <a class="grid-image__link" href="#">
+                                <div class="grid-image__item">
+                                    <img src="./assets/images/1.jpg" alt="img-1">
+                                    <div class="grid-image__text">
+                                        <p class="grid-image-text__left">Wine Festival</p>
+                                        <p class="grid-image-text__right">550</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="grid-image__link" href="#">
+                                <div class="grid-image__item">
+                                    <img src="./assets/images/2.jpg" alt="img-2">
+                                    <div class="grid-image__text">
+                                        <p class="grid-image-text__left">Wine Tasting</p>
+                                        <p class="grid-image-text__right">920</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <a class="grid-image__link" href="#">
+                                <div class="grid-image__item">
+                                    <img src="./assets/images/3.jpg" alt="img-3">
+                                    <div class="grid-image__text">
+                                        <p class="grid-image-text__left">Wine Tasting</p>
+                                        <p class="grid-image-text__right">2130</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="grid-image__link" href="#">
+                                <div class="grid-image__item">
+                                    <img src="./assets/images/4.jpg" alt="img-4">
+                                    <div class="grid-image__text">
+                                        <p class="grid-image-text__left">Villages</p>
+                                        <p class="grid-image-text__right">850</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <a class="grid-image__link" href="#">
+                                <div class="grid-image__item grid-image__item--double-height">
+                                    <img src="./assets/images/travel-slide-4.jpg" alt="travel-slide-4">
+                                    <div class="grid-image__text">
+                                        <p class="grid-image-text__left">Camping</p>
+                                        <p class="grid-image-text__right">1550</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <a class="grid-image__link" href="#">
+                                <div class="grid-image__item">
+                                    <img src="./assets/images/5.jpg" alt="img-5">
+                                    <div class="grid-image__text">
+                                        <p class="grid-image-text__left">Harvest</p>
+                                        <p class="grid-image-text__right">2600</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="grid-image__link" href="#">
+                                <div class="grid-image__item">
+                                    <img src="./assets/images/6.jpg" alt="img-6">
+                                    <div class="grid-image__text">
+                                        <p class="grid-image-text__left">Local Wines</p>
+                                        <p class="grid-image-text__right">1300</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
