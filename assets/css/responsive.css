@@ -10,6 +10,12 @@
         font-size: 6rem;
         line-height: 6rem;
     }
+    .video-bg-btn__button {
+        --size-button: 72px;
+    }
+    .experience-intro-content__title {
+        font-size: 4.2rem;
+    }
 }
 
 
@@ -49,6 +55,12 @@
     }
     .grid-image__item--double-height {
         height: calc(var(--size-product-on-pc-medium) * 2 + 18px);
+    }
+    .experience-intro__image { 
+        padding-left: 78px;
+    }
+    .container__experience-intro {
+        flex-direction: row;
     }
 }
 
@@ -100,5 +112,11 @@
     }
     .grid-image__item--double-height {
         height: calc(var(--size-product-on-pc-low) * 2 + 18px);
+    }
+    .experience-intro__image { 
+        padding-left: 78px;
+    }
+    .container__experience-intro {
+        flex-direction: row;
     }
 }
