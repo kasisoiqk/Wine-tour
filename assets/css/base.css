@@ -14,6 +14,8 @@
     --size-product-on-pc-medium: 282px;
     --size-product-on-tablet: 314px;
     --size-product-on-mobile: 300px;
+
+    --header-tablet-height: 72px;
 }
 
 * {
@@ -78,4 +80,131 @@ html {
         line-height: 3rem;
         color: var(--text-color);
     }
+}
+
+/* Modal login - register */
+.modal__login-register {
+    z-index: 99999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .2s;
+    background-color: rgba(250, 250, 250, 0.8);
+}
+
+.modal-login-register__input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    width: 310px;
+    height: 550px;
+    border-radius: 2px;
+}
+
+.modal-login-register__navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-login-register-navbar__login-btn,
+.modal-login-register-navbar__register-btn {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 5.4rem;
+    width: 100%;
+    text-align: center;
+}
+
+.modal-login-register__form {
+    padding: 28px;
+}
+
+.modal-login-register-form__group {
+    width: 100%;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    background-color: #71dcdf;
+    border-radius: 2px;
+    margin-top: 6px;
+}
+
+.modal-login-register-form__text > h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+.modal-login-register-form__text > p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.modal-login-register-form__text > div {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.modal-login-register-form__text > div > label {
+    padding-left: 12px;
+    margin: 12px 0;
+}
+
+.modal-login-register-form__text > a {
+    display: block;
+    font-size: 1.4rem;
+    color: #299fa4;
+    text-decoration: none;
+    margin: 0 0 18px;
+}
+
+.modal-login-register-form__group > i,
+.modal-login-register-form__group > span {
+    width: 48px;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.modal-login-register-form__group > span {
+    font-size: 1.6rem;
+}
+
+.modal-login-register-form__group > input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1.4rem;
+    color: var(--white-color);
+}
+
+.modal-login-register-form__group > input::placeholder {
+    font-size: 1.4rem;
+    color: var(--white-color);
+}
+
+.modal-login-register-form__btn {
+    background-color: var(--white-color);
+    color: var(--text-color);
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+}
+
+.form--login .modal-login-register-navbar__login-btn {
+    background-color: #3abdc1;
+}
+
+.form--register .modal-login-register-navbar__register-btn {
+    background-color: #3abdc1;
 }
