@@ -61,9 +61,9 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="header-info-right__modal-login">
+                    <label for="modal-login-register" class="header-info-right__modal-login">
                         <i class="far fa-user"></i>
-                    </div>
+                    </label>
                 </div>
             </div>
             <div class="header__banner">
@@ -303,9 +303,9 @@
                     <div class="header-tablet__logo">
                         <img src="./assets/images/logo-mobile-img.png" alt="logo-mobile-img">
                     </div>
-                    <div class="header-tablet__modal-login">
+                    <label for="modal-login-register" class="header-tablet__modal-login">
                         <i class="far fa-user"></i>
-                    </div>
+                    </label>
                 </div>
             </div>
             <div class="header-tablet-menu__list-main hide-on-pc">
@@ -669,18 +669,20 @@
         </footer>
     </div>
 
-    <div class="modal__login-register">
-        <div class="modal-login-register__input form--login form--register">
+    <input type="checkbox" name="modal-login-register" id="modal-login-register" hidden>
+    <label for="modal-login-register"  class="modal__login-register" style="display: none;">
+        <!-- From login class: form-login ; From register class: form--register -->
+        <label for="none" class="modal-login-register__input form--register">
             <div class="modal-login-register__navbar">
-                <div class="modal-login-register-navbar__login-btn">Login</div>
-                <div class="modal-login-register-navbar__register-btn">Register</div>
+                <a href="#"><div class="modal-login-register-navbar__login-btn">Login</div></a>
+                <a href="#"><div class="modal-login-register-navbar__register-btn">Register</div></a>
             </div>
             <form class="modal-login-register__form" action="" method="POST">
-                <div class="modal-login-register-form__text modal-login-register-form__group--login">
+                <div class="modal-login-register-form__text modal-login-register-form__text--login">
                     <h2>Sign In Here</h2>
                     <p>Log into your account in just a few simple steps.</p>
                 </div>
-                <div class="modal-login-register-form__text modal-login-register-form__group--register">
+                <div class="modal-login-register-form__text modal-login-register-form__text--register">
                     <h2>Register Now!</h2>
                     <p>Join the SetSail community today & set up a free account.</p>
                 </div>
@@ -701,7 +703,7 @@
                     <input type="text" id="repeat-password" name="repeat-password" placeholder="Repeat Password"
                         required>
                 </div>
-                <div class="modal-login-register-form__text modal-login-register-form__group--login">
+                <div class="modal-login-register-form__text modal-login-register-form__text--login">
                     <div class="">
                         <input type="checkbox" name="remember-me" id="remember-me">
                         <label for="remember-me">Remember me</label>
@@ -713,15 +715,19 @@
                     SIGN IN
                 </button>
                 <button
-                    class="modal-login-register-form__group modal-login-register-form__btn modal-login-register-form__group--resgiter">
+                    class="modal-login-register-form__group modal-login-register-form__btn modal-login-register-form__group--register">
                     REGISTER
                 </button>
-                <div class="modal-login-register-form__group modal-login-register-form__group--login">Sign in with
+                <div class="modal-login-register-form__text modal-login-register-form__group--login">Sign in with
                     Facebook or Google+</div>
             </form>
-
-        </div>
-    </div>
+            <div class="modal-login-register-form__group modal-login-register-form__social modal-login-register-form__group--login">
+                <div class="modal-login-register-form__facebook">Facebook</div>
+                <div class="modal-login-register-form__google">Google</div>
+            </div>
+            <div class="modal-login-register-form__group--register" style="height: 24px;"></div>
+        </label>
+    </label>
 
     <a href="#" class="goto-top">TOP</a>
 
