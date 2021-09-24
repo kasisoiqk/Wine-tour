@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main-home.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -393,7 +394,7 @@
                     </div>
                 </div>
 
-                <div class="container__popular-tours">
+                <div data-aos="fade-down" class="container__popular-tours">
                     <div class="popular-tours__img">
                         <img src="./assets/images/travel-img-1.png" alt="travel-img-1">
                     </div>
@@ -435,17 +436,17 @@
                     </div>
                 </div>
 
-                <div class="container__img">
+                <div data-aos="fade-down" class="container__img">
                     <img src="./assets/images/travel-img-2.jpg" alt="travel-img-2">
                 </div>
 
-                <div class="container__text">
+                <div data-aos="fade-down" class="container__text">
                     <h2>The Best Tours</h2>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an
                         commodo ligula eget dolor. Aenean massa. Cum sociis</p>
                 </div>
 
-                <div class="container__gird-image">
+                <div data-aos="fade-down" class="container__gird-image">
                     <div class="row">
                         <div class="col l-3 m-6 c-12">
                             <a class="grid-image__link" href="#">
@@ -521,32 +522,32 @@
                     </div>
                 </div>
 
-                <div class="container__count-numbers">
+                <div data-aos="fade-down" class="container__count-numbers">
                     <div class="row">
                         <div class="col l-3 m-6 c-12 count-numbers__item">
-                            <h2>45</h2>
+                            <h2 class="count-up">45</h2>
                             <h4>Glasses of Wine</h4>
                             <p>Cap at perspic iatis unde omnis iste natus error sit volup tatem</p>
                         </div>
                         <div class="col l-3 m-6 c-12 count-numbers__item">
-                            <h2>126</h2>
+                            <h2 class="count-up">126</h2>
                             <h4>Years of experience</h4>
                             <p>Sop ut perspic iatis ande emnis iste natus error sit volup fatom</p>
                         </div>
                         <div class="col l-3 m-6 c-12 count-numbers__item">
-                            <h2>452</h2>
+                            <h2 class="count-up">452</h2>
                             <h4>Unique Wines</h4>
                             <p>Sed ut perspic iatis unde omnis iste natus error sit volup tatem</p>
                         </div>
                         <div class="col l-3 m-6 c-12 count-numbers__item">
-                            <h2>247</h2>
+                            <h2 class="count-up">247</h2>
                             <h4>Sorts of Wine</h4>
                             <p>Cap of qerspic iatis ande umnis lcte natus error sit volup fatem</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="container__video">
+                <div data-aos="fade-down" class="container__video">
                     <div class="video__bg-btn">
                         <div class="video-bg-btn__background">
                             <img src="./assets/images/travel-video-button-img.jpg" alt="travel-video-button-img">
@@ -559,7 +560,7 @@
                     </div>
                 </div>
 
-                <div class="container__experience-intro">
+                <div data-aos="fade-down" class="container__experience-intro">
                     <div class="experience-intro__content">
                         <h2 class="experience-intro-content__title">Our Popular Tours</h2>
                         <p class="experience-intro-content__text">
@@ -732,6 +733,18 @@
     <a href="#" class="goto-top">TOP</a>
 
     <script src="./assets/js/main.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: true,
+            duration: 500
+        });
+    </script>
 
 </body>
 

@@ -93,6 +93,24 @@ html {
     }
 }
 
+@keyframes GrowY {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
+}
+
+@keyframes GrowX {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
 /* Modal login - register */
 .modal__login-register{
     z-index: 99999;
@@ -224,11 +242,11 @@ html {
     letter-spacing: 2px;
 }
 
-.form--login .modal-login-register-navbar__login-btn {
+.form--register .modal-login-register-navbar__login-btn {
     background-color: #3abdc1;
 }
 
-.form--register .modal-login-register-navbar__register-btn {
+.form--login .modal-login-register-navbar__register-btn {
     background-color: #3abdc1;
 }
 
